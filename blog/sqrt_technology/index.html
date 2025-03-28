@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#onsqrtn" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -485,7 +485,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       分块
     </span>
@@ -495,7 +495,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       实现思路
     </span>
@@ -504,7 +504,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       例题
     </span>
@@ -654,7 +654,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       分块
     </span>
@@ -664,7 +664,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       实现思路
     </span>
@@ -673,7 +673,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       例题
     </span>
@@ -720,14 +720,14 @@
   
 
 
-<h1 id="onsqrtn"><span class="arithmatex">\(O(n\sqrt{n})\)</span> 算法<a class="headerlink" href="#onsqrtn" title="Permanent link">&para;</a></h1>
-<h2 id="_1">分块<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="_1">根号科技<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">分块<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><strong>分块</strong> 可以用来维护一些难以在线段树/平衡树上维护的信息，比如静态强制在线区间逆序对，区间加/区间第 <span class="arithmatex">\(k\)</span> 大等等信息。</p>
-<h3 id="_2">实现思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="_3">实现思路<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>将长为 <span class="arithmatex">\(n\)</span> 的区间均匀分为 <span class="arithmatex">\(\sqrt{n}\)</span> 个块，维护每个点的信息以及每个块的整体信息。</p>
 <p>在修改时，对于被修改区间覆盖的整块进行打标记的操作，时间复杂度 <span class="arithmatex">\(O(\sqrt{n})\)</span>，同时对于两头不属于整块的区间进行暴力修改，时间复杂度 <span class="arithmatex">\(O(\sqrt{n})\)</span>。这样就得到了整体时间复杂度 <span class="arithmatex">\(O(\sqrt{n})\)</span> 的区间修改。</p>
 <p>在查询时，遍历所有被查询区间覆盖的整块，计算贡献，时间复杂度 <span class="arithmatex">\(O(\sqrt{n})\)</span>，同时对于两头不属于整块的区间进行暴力计算贡献，时间复杂度 <span class="arithmatex">\(O(\sqrt{n})\)</span>。这样就得到了整体时间复杂度 <span class="arithmatex">\(O(\sqrt{n})\)</span> 的区间查询。</p>
-<h3 id="_3">例题<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_4">例题<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <h4 id="p4135"><a href="https://www.luogu.com.cn/problem/P4135">洛谷 P4135</a> 作诗<a class="headerlink" href="#p4135" title="Permanent link">&para;</a></h4>
 <p>给定一个数列 <span class="arithmatex">\(a\)</span>，每次查询给定一个区间 <span class="arithmatex">\([l,r]\)</span>，求 <span class="arithmatex">\(\sum_{i=1}^{c} [\sum_{j=l}^{r}[a_{j}=i] \geq 2 \land \sum_{j=l}^{r}[a_{j}=i] \equiv 0\pmod{2}]\)</span>。</p>
 <p>在本题中，预处理出 <span class="arithmatex">\(f[i][j]\)</span> 表示块 <span class="arithmatex">\(i\)</span> 到块 <span class="arithmatex">\(j\)</span> 的答案，<span class="arithmatex">\(b[i][j]\)</span> 表示 <span class="arithmatex">\(i\)</span> 在前 <span class="arithmatex">\(j\)</span> 个块中的出现次数。</p>
