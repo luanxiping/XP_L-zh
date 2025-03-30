@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://luanxiping.github.io/XP_L-zh/</loc>
-         <lastmod>2025-03-28</lastmod>
+         <lastmod>2025-03-30</lastmod>
     </url>
     <url>
-         <loc>https://luanxiping.github.io/XP_L-zh/blog/dp_optimization/</loc>
-         <lastmod>2025-03-28</lastmod>
+         <loc>https://luanxiping.github.io/XP_L-zh/OI/bit_contest/</loc>
+         <lastmod>2025-03-30</lastmod>
     </url>
     <url>
-         <loc>https://luanxiping.github.io/XP_L-zh/blog/lca/</loc>
-         <lastmod>2025-03-28</lastmod>
+         <loc>https://luanxiping.github.io/XP_L-zh/OI/dp_optimization/</loc>
+         <lastmod>2025-03-30</lastmod>
     </url>
     <url>
-         <loc>https://luanxiping.github.io/XP_L-zh/blog/sam/</loc>
-         <lastmod>2025-03-28</lastmod>
+         <loc>https://luanxiping.github.io/XP_L-zh/OI/lca/</loc>
+         <lastmod>2025-03-30</lastmod>
     </url>
     <url>
-         <loc>https://luanxiping.github.io/XP_L-zh/blog/sqrt_technology/</loc>
-         <lastmod>2025-03-28</lastmod>
+         <loc>https://luanxiping.github.io/XP_L-zh/OI/sam/</loc>
+         <lastmod>2025-03-30</lastmod>
+    </url>
+    <url>
+         <loc>https://luanxiping.github.io/XP_L-zh/OI/sqrt_technology/</loc>
+         <lastmod>2025-03-30</lastmod>
     </url>
     <url>
          <loc>https://luanxiping.github.io/XP_L-zh/docs/help/</loc>
-         <lastmod>2025-03-28</lastmod>
+         <lastmod>2025-03-30</lastmod>
     </url>
 </urlset>
